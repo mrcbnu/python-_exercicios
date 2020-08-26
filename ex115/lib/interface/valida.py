@@ -1,3 +1,6 @@
+from ex115.lib.interface.cores import c
+
+
 def leiaInt(msg):
     '''
     -> Função que valida a entrada de um numero inteiro
@@ -10,6 +13,9 @@ def leiaInt(msg):
         except (TypeError, ValueError):
             print('não é um numero inteiro valido!')
             continue
+        except KeyboardInterrupt:
+            print(f'{c(5)}O usuário preferiu não informar o valor {c(0)}')
+            return 0
         else:
             return num
 

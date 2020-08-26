@@ -1,3 +1,6 @@
+#! author: Marcio Alves
+
+
 from lib.interface.layout import *
 from lib.arquivos.arquivo import *
 
